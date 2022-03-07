@@ -23,12 +23,10 @@ export class UserController {
                         throw +response;
                     }
                 })
-                    .catch((status) => {
-                    if (status === 404) {
-                        this.textDefault.style.display = "none";
-                        this.inputSearch.value = "";
-                        User.templateError("Não podemos confirmar e nem negar a existência deste repositório.");
-                    }
+                    .catch(() => {
+                    this.textDefault.style.display = "none";
+                    this.inputSearch.value = "";
+                    User.templateError("Não podemos confirmar e nem negar a existência deste repositório.");
                 });
             }
             else {
