@@ -41,7 +41,7 @@ export class User {
         const info = document.querySelector(".wrapper");
         const template = `
             <div class="feedback">
-                <i class="fa-solid fa-xmark icon"></i>
+                <img src="img/svg/error.svg">
                 <h2>Ooops! Parece que ocorreu um erro.</h2>
                 <p>${text}</p>
             </div>

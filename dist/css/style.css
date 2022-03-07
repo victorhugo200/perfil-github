@@ -28,8 +28,8 @@ header {
 }
 
 header .icon {
-    font-size: 44px;
-    color: white;
+    width: 44px;
+    fill: white;
     text-align: center;
 }
 
@@ -72,7 +72,7 @@ main form button {
 }
 
 main form button .icon {
-    font-size: 18px;
+    width: 30%;
 }
 
 .text-default {
@@ -157,9 +157,8 @@ main form button .icon {
     margin-top: 60px;
 }
 
-.feedback .icon {
-    font-size: 64px;
-    color: var(--error);
+.feedback img {
+    width: 8%;
 }
 
 .feedback h2 {
@@ -193,6 +192,9 @@ main form button .icon {
     }
     main form input[type="text"]::placeholder {
         font-size: 14px;
+    }
+    main form button .icon {
+        width: 7%;
     }
     .profile .info {
         grid-template-columns: 1fr;
