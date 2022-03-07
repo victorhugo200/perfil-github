@@ -1,0 +1,26 @@
+{
+    "name": "github",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "tsc && node dist/app.js",
+        "server": "lite-server --baseDir=dist",
+        "compile": "tsc",
+        "watch": "tsc -w",
+        "start:all": "concurrently \"npm run watch\" \"npm run server\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tslint": "^6.1.3",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.0.0",
+        "concurrently": "^7.0.0",
+        "lite-server": "^2.6.1",
+        "moment": "^2.29.1"
+    }
+}

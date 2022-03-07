@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import './variables/variables.css';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #b7b7b78c;
+}
+
+header {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--black-90);
+    box-shadow: -8px 0 4px var(--black-90);
+    text-align: center;
+}
+
+header .icon {
+    font-size: 44px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px 0;
+    margin-top: 44px;
+    min-height: 90vh;
+}
+
+main form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main form input[type="text"] {
+    width: 600px;
+    padding: 8px;
+    border: 2px solid var(--black-90);
+    font-size: 18px;
+    outline: none;
+}
+
+main form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 41px;
+    width: 64px;
+    color: white;
+    background-color: var(--black-90);
+    cursor: pointer;
+}
+
+main form button .icon {
+    font-size: 18px;
+}
+
+.text-default {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 30px;
+}
+
+.profile figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px double var(--black);
+}
+
+.profile .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.profile .info__resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .info__resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .info__resume:nth-child(2) {
+    border-right: 3px solid var(--black-60);
+    border-left: 3px solid var(--black-60);
+    padding: 0 36px;
+}
+
+.profile .info__resume .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-60);
+    margin-bottom: 8px;
+}
+
+.profile .info__resume span {
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--black-60);
+}
+
+.profile h3 {
+    margin-top: 30px;
+}
+
+.profile p {
+    text-align: center;
+    margin-top: 30px;
+    max-width: 490px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.feedback .icon {
+    font-size: 64px;
+    color: var(--error);
+}
+
+.feedback h2 {
+    font-size: 32px;
+    color: var(--black-60);
+    margin: 16px 0;
+    text-align: center;
+}
+
+.feedback p {
+    font-size: 18px;
+    color: var(--black-60);
+}
+
+.footer {
+    width: 100%;
+    padding: 28px 0;
+    text-align: center;
+    background-color: var(--black-90);
+    box-shadow: -8px 0 4px var(--black);
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 700px) {
+    main form {
+        width: 90%;
+    }
+    main form input[type="text"] {
+        width: 100%;
+    }
+    main form input[type="text"]::placeholder {
+        font-size: 14px;
+    }
+    .profile .info {
+        grid-template-columns: 1fr;
+    }
+    .profile .info__resume:nth-child(2) {
+        border: none;
+        border-top: 3px solid var(--black-60);
+        border-bottom: 3px solid var(--black-60);
+        padding: 36px 0;
+    }
+    .profile h1 {
+        text-align: center;
+    }
+    .feedback {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    main form {
+        flex-direction: column;
+    }
+    main form button {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+}
